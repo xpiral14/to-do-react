@@ -11,3 +11,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.adicionar-tarefa {
+  display: flex;
+
+}
+
+/*
+  . -> pegar classes
+  # -> pegar ids
+    -> pegar elemento em si
+*/
+
+.adicionar-tarefa input {
+  padding: 15px 20px;
+  border-radius: 10px 0 0 10px;
+  width: 340px;
+  height: 60px;
+  border: 1px solid #5962FF;
+}
+
+.adicionar-tarefa button {
+  border-radius: 0px 10px 10px 0;
+  width: 60px;
+  background-color: #5962FF;
+  border: none;
+}
+
+.adicionar-tarefa button img {
+  width: 24px;
+  /* background: white; */
+}
+
+.principal {
+  margin: 0 auto;
+  align-items: center;
+  width: 400px;
+  height: 100vh;
+
+}
+
+.tarefas {
+  margin-top: 40px;
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 400px;
+  
+}
+
+.tarefa {
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, .12);
+  border-radius: 10px;
+}
+
+.tarefa button {
+  background: none;
+  border: none;
+  /* margin-bottom: 20px; */
+}
+
+#root {
+  overflow: hidden;
+}
+
+/* .tarefas .tarefa:not(.tarefa:last-child) { */
+/* } */
